@@ -387,7 +387,7 @@ The PT(message) statement will print the value of the message variable to the sc
 
 ## String Concatenation
 
-In GPTLang, the `+` operator is used for concatenating strings. When the `+` operator is applied to strings, it concatenates them together to form a single string. Additionally, if one of the operands is a string and the other is a number, the number will be automatically converted to a string before concatenation.
+In GPTLang, the `+` operator is used for concatenating strings. When the `+` operator is applied to strings, it concatenates them together to form a single string. Additionally, if one of the operands is a string and the other is not a string, the other operand will be converted to a string when possible.
 
 Here's an example illustrating string concatenation in GPTLang:
 ```gptlang
