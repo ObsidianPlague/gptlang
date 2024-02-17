@@ -382,11 +382,12 @@ In this example, the VAR statement defining the message variable uses implicit l
 
 The PT(message) statement will print the value of the message variable to the screen, which is "Hello, world! This is a long message that spans multiple physical lines."
 
-## String Concatenation
+## String Concatenation and Automatic Type Conversion
 
-In GPTLang, the `+` operator is used for concatenating strings. When the `+` operator is applied to strings, it concatenates them together to form a single string. Additionally, if one of the operands is a string and the other is not a string, the other operand will be converted to a string when possible.
+In GPTLang, the `+` operator is used for string concatenation. When using the `+` operator with strings, it concatenates them together. If one of the operands is not a string, it will be automatically converted to a string before concatenation. This allows for flexible string manipulation and simplifies code readability.
 
-Here's an example illustrating string concatenation in GPTLang:
+Here's an example illustrating string concatenation and automatic type conversion in GPTLang:
+
 ```gptlang
 VAR greeting:str "Hello"
 VAR name:str "John"
