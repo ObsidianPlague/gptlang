@@ -25,6 +25,7 @@ jobs:
         uses: Mattraks/delete-workflow-runs@v2.0.6
         with:
           keep_minimum_runs: 1
+          retain_days: 0
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
