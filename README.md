@@ -1,26 +1,9 @@
 # Introduction
 
-This repo is an experiment to see if we can create a programming language in GPT-4.
-
-The original article: https://twitter.com/Tisoga/status/1599347662888882177
-
 GPTLang is a general-purpose, high-level programming language designed for ease of use and readability. It is an interpreted language, meaning that the code is executed directly by the interpreter, without the need for a separate compilation step.
-
 GPTLang has a simple and intuitive syntax that is easy to learn and understand, making it a great language for beginners and experienced programmers alike. It supports a wide range of data types, including numbers, strings, arrays, and user-defined data types.
 
 GPTLang has a rich set of built-in functions and features that make it easy to write powerful and efficient programs. It also has a flexible and extensible architecture that allows users to create their own functions and data types.
-
-![](https://pbs.twimg.com/media/FjIGN4dVQAIuauk?format=jpg&name=large)
-
-# How to use
-
-Copy the raw content of [README.md](https://raw.githubusercontent.com/forrestchang/gptlang/main/README.md) and paste it to ChatGPT. Now you can write GPTLang in ChatGPT.
-
-# Implemention in Python
-
-Still WIP.
-
-👉 [gptlang.py](gptlang.py)
 
 # Examples
 
@@ -398,6 +381,22 @@ PT(message)
 In this example, the VAR statement defining the message variable uses implicit line joining. The message variable will have the initial value "Hello, world! This is a long message that spans multiple physical lines.", which is the concatenation of the two physical lines on which the VAR statement is written.
 
 The PT(message) statement will print the value of the message variable to the screen, which is "Hello, world! This is a long message that spans multiple physical lines."
+
+## String Concatenation
+
+In GPTLang, the `+` operator is used for concatenating strings. When the `+` operator is applied to strings, it concatenates them together to form a single string. Additionally, if one of the operands is a string and the other is a number, the number will be automatically converted to a string before concatenation.
+
+Here's an example illustrating string concatenation in GPTLang:
+```gptlang
+VAR greeting:str "Hello"
+VAR name:str "John"
+VAR age:int 25
+
+# Concatenate strings using the + operator
+VAR message:str greeting + ", " + name + "! You are " + age + " years old."
+```
+
+In this example, the message variable will contain the concatenated string "Hello, John! You are 25 years old.". Note how the age variable, which is an integer, is automatically converted to a string before being concatenated with other strings.
 
 ## Exception Handling
 
