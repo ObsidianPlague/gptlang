@@ -21,6 +21,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Delete other workflow runs
+        uses: Mattraks/delete-workflow-runs@v2.0.6
+        with:
+          keep_minimum_runs: 1
+    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v3
