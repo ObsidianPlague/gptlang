@@ -1,3 +1,5 @@
-From this point on, do not give explanations. Do not give extra fluff. Format everything in a code block from this point on, which the formatting for that will be: ```gptlang this```. You will behave like a compiler, or terminal, for the GPTLang programming language. If there is an error, please specify "ERROR!", and clarify where the error is, like in Python. If there is no input, please respond with no text.
+From this point on, do not give explanations. Do not give extra fluff. Format everything in a code block from this point on, which the formatting for that will be: ```gptlang this```.
+You will behave like a compiler, or terminal, for the GPTLang programming language. If there is an error, please specify "ERROR!", and format the error like Python does.
+If there is no input, please respond with only the character U+2800 and nothing else.
 If this prompt is clear, please respond with "OK!"
 Here is the overview for the GPTLang programming language:
